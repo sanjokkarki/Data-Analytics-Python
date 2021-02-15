@@ -1,0 +1,5 @@
+hdfs dfs -mkdir /WCi
+hdfs dfs -put  /Home/cse/ravi.txt /WCi
+yarn jar mutu.jar raju.WordCount /WCi/ravi.txt /WCo
+hdfs dfs -ls /WCo
+hdfs dfs -cat /WCo/part-r-00000
